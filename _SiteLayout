@@ -15,7 +15,7 @@
     </head>
     <body>
         <header>
-                
+                <a href="~/index.html"></a>
                 <div class="float-right">
                     <section id="login">
                         @if (WebSecurity.IsAuthenticated) {
