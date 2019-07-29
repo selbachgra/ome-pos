@@ -66,4 +66,10 @@ level 2 item
 level 2 item
 level 1 item
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-
+# Ustawienia witryny
+tytuł : Przestrzeń powietrzna
+podtytuł : „ Bezpłatny szablon agencji HTML5 ”
+url : „ https://justanother-timetraveller.github.io ”  # podstawowa nazwa hosta i protokół dla Twojej witryny
+# baseurl: "/ the / subpath / of / your / site" # Ustaw tę wartość na "", jeśli chcesz, aby witryna była rootem
+baseurl : „ / ”
