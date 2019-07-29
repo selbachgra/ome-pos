@@ -1,7 +1,7 @@
 defaults:
 -
 scope:
-path:"projects"  # an empty string here means all files in the project
+path:" "  # an empty string here means all files in the project
 values:
 layout:"default"
 defaults:
