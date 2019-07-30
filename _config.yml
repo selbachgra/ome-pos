@@ -1,34 +1,3 @@
-defaults:
--
-scope:
-path:""
-type:"pages"
-values:
-layout:"my-site"
--
-scope:
-path:"projects"
-type:"pages" #previously 'page'in Jekyll 2.2
-values:
-layout:"project" #overrides previous default layot
-autor:"Mr.Hyde"
- #In _config.yml
- ...
- defaults
- -
- scope:
- path: "projects"
- type: "pages"
- values:
- layout:"project"
- author:"Mr.Hyde"
- category:"project"
- ...
- # In projects/foo_project.md
- ---
- autor:"Grazyna Selbach"
- layout: "foobar"
- ---
  The post text goes here...
 Text can be bold, italic, or strikethrough.
 
