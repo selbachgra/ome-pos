@@ -1,11 +1,11 @@
 <!Doctype  html>
   < html lang="en"
-    Page.Title = "ome!pos";
-<head>
-        <title>ome!pos</title>
+   <head>
+<meta charset="utf-8">
+        <title>{{page.title}}</title>
         <meta name="description" content="description_ome!pos_spolecznosc_kontakty"/>
 <link href="~/animated_favicon1.gif" rel="animated_favicon1 icon" type="image/x-icon"/>
-
+<link rel="stylesheet" href="/css/style.css">
     <meta http-equiv="Refresh" content="5;url=http://localhost:7184/">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
@@ -27,7 +27,7 @@
         <script src="~/Scripts/modernizr-2.6.2.js"></script>
         <script src="./Scripts/index.js"></script>
     </head>
-    
+<style>    
  h1{
   display: none;              
             }           
@@ -170,40 +170,36 @@ ul {
     <img src="screenshot-2.png" alt="Images/ome!posLogo.png"style="margin: 0px 0px 0px 60px"/>
     <p>Twórz wizualny świat</p>
                    <nav>
-                           <ul id="menu">  
                                 <a href="~/Account/Register"style="margin-top:-1px;margin-left: 120px;background-color:#0026ff;width: 200px;border: 1px solid red;border-radius: 5px 5px 5px 5px;float: left;">Registrieren</a>  
-
                                 <a href="~/Account/Login" style="margin-top: 10px; margin-left: 120px; background-color: #0026ff; width: 200px; border: 1px solid red; border-radius: 5px 5px 5px 5px; float: left;">Anmelden</a>                                    
-
-                            </ul>
-                        </nav>
-
-                   <nav>
-                        <ul id="menu1">
-                            <a href="~/">Startseite</a>
-                            <a href="~/About">Info</a>
-                            <a href="~/Contact">Contakt</a>
-                            <a href="~/About">About</a>
-                            <a href="~/Regolamin">Regolamin</a>
-                            <a href="~/LICENSE">LICENSE</a>
-                            <a href="~/Praca">Praca</a>
-                            <a href="~/Forum">Forum</a>
-                            <a href="~/Photolio">Photolio</a>
-                            <a href="~/termsfeed-html-privacy-policy-english.html.cshtml">Privacy Policy</a>
-                            <a href="~/twitter strona.cshtml">Twitter przegląd</a>
-                        </ul>
                        </nav>
+                   <nav>
+                            <a href="~/">Startseite</a>
+                            <a href="~/About/">Info</a>
+                            <a href="~/Contact/">Contakt</a>
+                            <a href="~/About/">About</a>
+                            <a href="~/Regolamin/">Regolamin</a>
+                            <a href="~/LICENSE/">LICENSE</a>
+                            <a href="~/Praca/">Praca</a>
+                            <a href="~/Forum/">Forum</a>
+                            <a href="~/Photolio/">Photolio</a>
+                            <a href="~/termsfeed-html-privacy-policy-english.html.html/">Privacy Policy</a>
+                            <a href="~/twitter strona.html/">Twitter przegląd</a>
+                        </nav>
                    </div>
           </div>
+              <section>
+                {{content}}
+              </section>  
     </footer>
- 
-            <div class="content-wrapper"></div>
+             <div class="content-wrapper"></div>
                 <div class="float-left">
                     
                     </div>
           
-
-         <p>&copy; @DateTime.Now. - Copyright <img src='ome!pos.pgn.png'alt="..." style='width:80px;border-radius: 50px 50px 50px 50px;'/></p>
+page.title}}
+            </section>  
+         <p>&copy;to me - Copyright <img src='ome!pos.pgn.png'alt="..." style='width:80px;border-radius: 50px 50px 50px 50px;'/></p>
 
     </body>
    </html>
