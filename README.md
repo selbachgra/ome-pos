@@ -28,3 +28,7 @@ var fun = function lang(l) {
 GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
 end
+header_pages:
+- about.html
+- contact.html
+- default.html
