@@ -396,6 +396,37 @@ function one() {
 <!--Go to www.addthis.com/dashboard to customize your tools-->
 <div class="addthis_recommended_vertical"></div>                                 
    </body>
+   <footer>
+            <nav>
+                <ul id="menu">
+                           <a href="index.html"style="font-size: 12px">Startseite</a>
+                           <a href="About.html"style="font-size: 12px">Info</a>
+                           <a href="LICENSE.html"style="font-size: 12px">LICENSE</a>
+                           <a href="~/Regolamin"style="font-size: 12px">Regolamin</a>
+                           <a href="Contact.html"style="font-size: 12px">Contakt</a>
+                           <a href="Praca.html"style="font-size: 12px">Praca</a>
+                           <a href="Forum.html"style="font-size: 12px">Forum</a>
+                           <a href="~/Photolio"style="font-size: 12px">Photolio</a>
+                           <a href="Zdjecia.html"style="font-size: 12px">Fotografia</a>
+                           <a href="~/termsfeed-html-privacy-policy-english.html.cshtml"style="font-size: 12px">Privacy Policy</a>
+                           <a href="twitter strona.html"style="font-size: 12px">Twitter przegląd</a>
+                           <a href="Endecken.html">Endecken</a>
+                           <a href="Mitteilungen.html">Mitteilungen</a>
+                           <a href="~/Zakladka"></a>
+                           <a href="strona dla uzytkownikahtml">Strona</a>
+                           <a href="strona po wylogowaniu.html">Wylogowanie</a>  
+                        </ul>
+                        </nav>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy;2019- Copyright <header>
+                         <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><a href="ome!pos"><img src='http:ome!pos.pgn.png'alt="..."title="ome!pos" style='width:80px;border-radius: 50px 50px 50px 50px;'/></p>/></a>
+                </div>
+                </div>
+                    </div>
+                        </footer> 
 </html>
 
    
