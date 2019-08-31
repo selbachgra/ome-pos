@@ -6,13 +6,32 @@
     <h2>Portale platnzch ankiet.</h2>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
+        <meta name="description" content="description_ome!pos_spolecznosc_kontakty"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="_SiteLayout.html"/>
         <link href="index.html"/>
         <link href="_SiteLayout.html"/>
+        <link rel="manifest" href="/manifest.json"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
+    <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+       
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
         <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-        <link href="~/animated_favicon1.gif" rel="animated_favicon1 icon" type="image/x-icon"/>
+        <link href="animated_favicon1.gif" rel="animated_favicon1 icon" type="image/x-icon"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
+<link href="~/animated_favicon1.gif" rel="animated_favicon1 ico" type="image/x-icon"/>
+<script type="text/javascript" charset="iso-8859-2" src="news.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="content-type" content="text/html; charset=iso-8859-2" />
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif;}
+.w3-sidenav a {padding:16px;}
         <script src="~/Scripts/jquery-1.8.2.min.js"></script>
         <script src="~/Scripts/jquery-ui-1.8.24.js"></script>
         <script src="~/Scripts/modernizr-2.6.2.js"></script>
@@ -20,6 +39,330 @@
 </head>
 
 <style>
+      ol {
+        list-style-type:none;
+       
+       
+        z-index: 1;
+        display: flexbox;
+        top: 0;
+        left: 0;
+        right: 0;
+ }
+div.ex2 {
+    max-width:500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+      ol a {
+        display:inline;
+        text-decoration:none;
+        background: none;
+        width: 70px;
+      }
+a:hover, a:active{
+    background: none;
+}
+        ol > li {
+            float: left;
+            width: 90px;
+            margin-left: 1px;
+            background: none;
+  }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+       img src{
+            border-radius: 0px 0px 0px 0px;
+            position: absolute;
+            left: 300px;
+            top: 0px;
+            z-index: 1;
+           
+        top: 0;
+        left: 0;
+        right: 0;
+        }
+     /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+      ol > li:first-child {
+        margin-left:0;
+        background: none;
+      }
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover {
+        background: none;
+      }
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > a {
+        color:#09C;
+        background: none;
+      }
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > ul {
+        display:block;
+        margin: 10px;
+        background-color:#FFF;
+        border-radius: 2px 2px 2px 2px;
+      }
+        a{
+            background: none;
+        } 
+    /* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
+      /* wygląd głównych rozwijanych elementów - ul */
+      ol > li > ul {
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        background: none;
+        
+      }
+      /* wygląd elementu - li - w części rozwijanej */
+      ol > li > ul > li {
+        position:relative;
+        background: none;
+      }
+      /* wygląd elementu - a - w części rozwijanej */
+      ol > li > ul > li > a {
+       background: none; 
+      }
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      ol > li > ul > li:hover {
+        background: none;
+      }
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      ol > li > ul > li:hover > a {
+        color:#09C;
+        background: none;
+        text-decoration: underline;
+      }  
+     ul class socials{
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        background: none;
+        box-shadow: 1px 1px 1px 1px #808080;
+        }
+    
+#nav {
+    background-color:#eeeeee;
+    width:242px;
+    float:left;
+    text-align: center;
+    resize: vertical;
+    border-radius: 5px 5px 5px 5px;
+    border: 001px solid lightblue;
+    resize: vertical;
+    background-color: #FFF;
+    float: right;
+    float: left;
+    margin: auto;
+    height: auto;       
+}
+           
+          .flex-item{
+          background-color: #0ff;
+          border-radius: 5px 5px 5px 5px;
+          height: 5px;
+          margin: 0px;
+          margin-top: 18px;
+          
+        }
+       
+        link rel{background-image:url("http://www.w3schools.com/lib/w3.css");
+        }
+        link rel {
+            background-image: url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css);
+        }
+         
+        socials{
+            width: 120px;
+            padding:0 100px;
+            height: 60px;
+        }
+ a.ex8:hover, a.ex8:active {color: #0ff;}           
+    </style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+    <script type="text/javascript">
+  //<!--
+  $(document).ready(function() {
+    $(".w2bslikebox").hover(function() {
+      $(this).stop().animate({
+        right: "0"}
+                             , "medium");
+    }, function() {
+      $(this).stop().animate({
+        right: "-250"}
+                             , "medium");
+    }, 500);
+  });
+  
+</script>
+        </head>
+
+ 
+<!-- Remember to add more information here -->
+
+<!-- Do not display this at the moment
+ <img border="0" src="/images/pulpit.jpg" alt="Pulpit rock" width="304" height="228">
+ -->   
+
+<body>
+    <a href="index.html"></a>
+ <div id="cse-search-results">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script  type = "text/javascript"  src = "https://apis.google.com/js/plusone.js" ></script> 
+<g:plus  href = "https://plus.google.com/ {profileId} "  rel = "author"style="background-repeat: no-repeat;
+    background-attachment: fixed;z-index: 1" ></g:plus>
+ <!-- Fügen Sie dieses Tag an der Stelle ein, an der die Widget erscheinen soll. -->
+ <!-- Google CSE Search Box Begins -->
+ <!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+ <!-- The terms of service are available at https://www.google.com/support/customsearch/bin/answer.py?answer=1714300 -->
+ <form action="http://www.guha.com/results.html" id="cref_iframe">
+ <input name="cref" type="hidden" value="http://www.guha.com/cref_cse.xml">
+ <input name="cof" type="hidden" value="FORID:9">
+ </form>
+ <script src="'/cse'/brand'?form='cref_iframe" type="text/javascript"></script>
+ <!-- Google CSE Search Box Ends --> 
+
+<script type="text/javascript" src="//www.google.com/afsonline/show_afs_search.js"></script>
+</div>     
+
+    <h1 id="fb-welcome"style="margin-left: 70px"></h1>
+    <script>
+    // Place following code after FB.init call.
+function onLogin(response) {
+  if (response.status == 'connected') {
+    FB.api('/me?fields=first_name', function(data) {
+      var welcomeBlock = document.getElementById('fb-welcome');
+      welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
+    });
+  }
+}
+FB.getLoginStatus(function(response) {
+  // Check login status on load, and if the user is
+  // already logged in, go directly to the welcome message.
+  if (response.status == 'connected') {
+    onLogin(response);
+  } else {
+    // Otherwise, show Login dialog first.
+    FB.login(function(response) {
+      onLogin(response);
+    }, {scope: 'user_friends, email'});
+  }
+});
+</script>    
+ <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true"style="margin-top:30px;margin-left: 720px "></div>         
+<script type="text/javascript" src="//www.google.com/afsonline/show_afs_search.js"></script>
+</div>
+   
+   
+   
+   <form action="#" method="post" enctype="multipart/form-data">
+         </form>
+   
+    
+    <div class="w3-container"style="position: fixed;">
+        <a class="w3-btn-floating w3-ripple w3-teal"href="#top"style="margin-left: 850px;opacity:0.6">+</a>
+    </div> 
+    <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+       <div id="nav"style="margin-left: -242px;margin-top: 100px;width: 242px;background-color: #cff3e7;color: #55bc49; resize: vertical;"><div class="fb-page" data-href="https://www.facebook.com/technikautocad/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"data-width="240"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/technikautocad/"><a href="https://www.facebook.com/technikautocad/">Technik Auto CAD</a></blockquote></div></div>
+<div id="fb-root"></div>
+    </div>
+      </div>
+        </div>
+    <!-- SnapWidget -->
+<div class="fb-page"
+  data-href="https://www.facebook.com/imdb"style="margin-left: 10px" 
+  data-width="400"
+  data-hide-cover="false"
+  data-show-facepile="true"></div>
+   
+<style>
+    #rcorners2 {
+    border-radius: 5px;
+    border: 1px solid #8AC007;
+    padding: 20px; 
+    width: 400px;
+   
+    resize: vertical;
+    html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #808080;
+    border-top: solid 10px #000;
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+    a:link, a:visited,
+    a:active, a:hover {
+        color: #333;
+    }
+    a:hover {
+        background-color: none;
+    }
+header, footer, hgroup,
+nav, section {
+    display: block;
+}
+mark {
+    background-color: #a6dbed;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+h1 {
+    font-size: 2em;
+}   
     #rcorners2 {
     border-radius: 5px;
     border: 1px solid #8AC007;
