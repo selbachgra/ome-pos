@@ -6,19 +6,296 @@
         <title>ome!pos</title>
     <h1>Contact</h1>
     <h2>Your contact page.</h2>
-        <link href="_SiteLayout.html"/>
-        <link href="index.html"/>
-  <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+       <meta name="description" content="description_ome!pos_spolecznosc_kontakty"/>
+<link href="animated_favicon1.gif" rel="animated_favicon1 icon" type="image/x-icon"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/>
+    <link href="animated_favicon1.gif" rel="animated_favicon1 icon" type="image/x-icon"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
+    <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
         <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-        <link href="~/animated_favicon1.gif" rel="animated_favicon1 icon" type="image/x-icon"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/>
         <script src="~/Scripts/jquery-1.8.2.min.js"></script>
         <script src="~/Scripts/jquery-ui-1.8.24.js"></script>
         <script src="~/Scripts/modernizr-2.6.2.js"></script>
-        <meta name="viewport" content="width=device-width" />      
+        <script src="./Scripts/index.js"></script>
+   <script type="text/javascript" charset="iso-8859-2" src="news.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif;}
+.w3-sidenav a {padding:16px;}
 </head>
-          <style>
-     html {
+</style>
+<link href="animated_favicon1.gif" rel="animated_favicon1 ico" type="image/x-icon"/>
+        <style>
+        title{
+        display: none;        
+            }    
+  ol {
+        list-style-type:none;
+        padding:15px;
+        margin:auto;
+        width: 100%;
+        font-size:14px;
+        height:02em;
+        line-height:1em;
+        text-align:center;
+        background: none;
+        float: left;
+        position: fixed;
+        background-image:url(cats2.jpg);
+        z-index: 1;
+        display: flexbox;
+        top: 0;
+        left: 0;
+        right: 0;
+   }
+div.ex2 {
+    max-width:500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+    
+      ol a {
+        display:inline;
+        text-decoration:none;
+        background: none;
+       
+        width: 70px;
+      }
+a:hover, a:active{
+    background: none;
+}
+     
+        ol > li {
+            float: left;
+            width: 90px;
+            margin-left: 1px;
+            background: none;
+  }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+       img src{
+            border-radius: 0px 0px 0px 0px;
+            position: absolute;
+            left: 300px;
+            top: 0px;
+            z-index: 1;
+           
+        top: 0;
+        left: 0;
+        right: 0;
+        }
+     /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+      ol > li:first-child {
+        margin-left:0;
+        background: none;
+      }
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover {
+        background: none;
+      }
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > a {
+        color:#09C;
+        background: none;
+      }
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > ul {
+        display:block;
+        margin: 10px;
+        background-color:#FFF;
+       
+       
+        border-radius: 2px 2px 2px 2px;
+        
+      }
+        
+        a{
+            background: none;
+        } 
+    /* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
+      /* wygląd głównych rozwijanych elementów - ul */
+      ol > li > ul {
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        background: none;
+        
+      }
+      /* wygląd elementu - li - w części rozwijanej */
+      ol > li > ul > li {
+        position:relative;
+        background: none;
+      }
+      /* wygląd elementu - a - w części rozwijanej */
+      ol > li > ul > li > a {
+       background: none; 
+      }
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      ol > li > ul > li:hover {
+        background: none;
+      }
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      ol > li > ul > li:hover > a {
+        color:#09C;
+        background: none;
+        text-decoration: underline;
+      }  
+     ul class socials{
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        background: none;
+        box-shadow: 1px 1px 1px 1px #808080;
+        }
+#nav {
+    background-color:#eeeeee;
+    width:242px;
+    float:left;
+    text-align: center;
+    resize: vertical;
+    border-radius: 5px 5px 5px 5px;
+    border: 001px solid lightblue;
+    resize: vertical;
+    background-color: #FFF;
+    float: right;
+    float: left;
+    margin: auto;
+    height: auto;       
+}
+           
+        section {
+    margin-left: 0px;
+}
+        .flex-item{
+          background-color: #0ff;
+          
+          height: 5px;
+          margin: 0px;
+          margin-top: 18px;
+        }
+       
+   #div1 {
+     background-color: #FFF;
+       width:400px;
+       
+       margin: -90px 20px 02px 260px;
+       border-radius: 5px 5px 5px 5px;
+       box-shadow: 02px 02px 5px #888888;
+       background-color: #FFF;
+       border: 001px solid lightblue;
+       resize: vertical;
+       overflow: auto;   
+}
+        link rel{background-image:url("http://www.w3schools.com/lib/w3.css");
+                
+        }
+        link rel {
+            background-image: url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css);
+        }
+        
+        socials{
+            width: 120px;
+            padding:0 100px;
+            height: 60px;
+        }
+        
+  
+   /* unvisited link */
+a:link {
+    color: #aea7a7;
+}          
+  /* mouse over link */
+a:hover {
+    color: #aea7a7;
+}
+a.ex1:hover, a.ex1:active {color: green;}
+a.ex2:hover, a.ex2:active {color:#71bd75;}
+a.ex3:hover, a.ex3:active {color: #6196d0;}
+a.ex4:hover, a.ex4:active {color: #ba8cef;}
+a.ex5:hover, a.ex5:active {color: #f32677;}
+            div id myDIV{
+              
+            }
+.container {
+    position: relative;
+    width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: -30px;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+ .container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color:#808080;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+ 
+}
+ .fa-facebook {
+        background: #b7bbc3;
+        color: white;
+    }
+    .fa-twitter {
+  background: #b7bbc3;
+  color: white;
+}
+ .fa-pinterest {
+  background: #b7bbc3;
+  color: white;
+}
+ .fa-instagram {
+  background: #b7bbc3;
+  color: white;
+}        
+ .fa {
+ 
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+  html {
     background-color: #e2e2e2;
     margin: 40;
     padding: 0;
@@ -643,6 +920,7 @@ tr.pager td {
     --------------------------------------------------*/
  
     </style>
+ <a href="index.html"></a>
   <body>  
     <a href="index.html"></a>
     <a href="index.html"></a>
@@ -682,10 +960,7 @@ tr.pager td {
     <header>
         <h3>Address:</h3>
     </header>
-    <p>
-        One Microsoft Way<br />
-        
-    </p>
+   
     </section>
    
 <footer>
@@ -714,9 +989,10 @@ tr.pager td {
                     <p>&copy;2019- Copyright <header>
                          <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title"><a href="ome!pos"><img src='http:ome!pos.pgn.png'alt="..."title="ome!pos" style='width:80px;border-radius: 50px 50px 50px 50px;'/></p>/></a>
+                    <p class="site-title"><a href="ome!pos"><img src='http:ome!pos.pgn.png'alt="..."title="ome!pos" style='width:80px;border-radius: 50px 50px 50px 50px;'/></p></a>
                 </div>
                 </div>
                     </div>
                         </footer> 
                         </body>
+      </html>
