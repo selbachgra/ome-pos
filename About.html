@@ -834,24 +834,25 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(v,
 <br> 
  </p>
     <script>
-@{
+
 if (IsPost)
-{ 
-string companyname = Request["CompanyName"]; 
  
+string companyname = Request["CompanyName"]; 
+    </script> 
 <p id="rcorners2"><br> 
- @companyname <br> 
+ companyname <br> 
  </p> 
-}
-else
-{
+
+
+
 <form method="post" action=""style="margin-top: -100px">
 Company Name:<input type="text" name="fname"><br> 
 <p class="padding"><input type="text" name="CompanyName" value=""style="margin-top: -15px"><br></p>
 <p id="demo"></p>
 <input type="submit" value="Submit" class="submit">
 </form> 
-    </script>
+   
+    
 <script>
 function myFunction() {
     var c = document.createComment("My personal comments");
