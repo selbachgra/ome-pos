@@ -200,18 +200,6 @@ function onLogin(response) {
     });
   }
 }
-FB.getLoginStatus(function(response) {
-  // Check login status on load, and if the user is
-  // already logged in, go directly to the welcome message.
-  if (response.status == 'connected') {
-    onLogin(response);
-  } else {
-    // Otherwise, show Login dialog first.
-    FB.login(function(response) {
-      onLogin(response);
-    }, {scope: 'user_friends, email'});
-  }
-});
 </script>    
  <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true"style="margin-top:30px;margin-left: 720px "></div>         
 <script type="text/javascript" src="//www.google.com/afsonline/show_afs_search.js"></script>
