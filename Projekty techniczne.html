@@ -43,41 +43,7 @@ img:hover{
     z-index: -1
 }
 
-.thumbnail{
-    float: left;
-    width: auto;
-    height: 142px;
-    margin: 5px;
-    z-index: -1
-}
-    .div{
-        width: 100px;
-        height: 100px;
-        background: red;
-        position: relative;
-        animation: mymove 60s infinite;
-        -webkit-animation: mymove 2s infinite; /* Safari and Chrome */
-    }
-    
- div{
-    /* Chrome, Safari, Opera */
-     -webkit-animation-name: myfirst;
-     -webkit-animation-duration: 5s;
-     -webkit-animation-timing-function: linear;
-     -webkit-animation-delay: 2s;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-direction: alternate;
-     -webkit-animation-play-state: running;
-     /* Standard syntax */
-     animation-name: myfirst;
-     animation-duration: 5s;
-     animation-timing-function: linear;
-     animation-delay: 2s;
-     animation-iteration-count: infinite;
-     animation-direction: alternate;
-     animation-play-state: running;
-     z-index: -1
- }
+
    h3{
        position: relative;  
     }
@@ -786,24 +752,24 @@ tr.pager td {
         style="border:none; overflow:hidden; width:225px; height:225px"></iframe>
 <div class="img">
    <a target="blank" href="img"></a>
-  <a href="#photos"><img src="@imagePath" alt="104"onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst"></a>  
+  
    </div>
        <div class="img">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="bombonierka.jpg" alt="104" width="120" height="90"><i class="hover"></i>
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="Szklany swiecznik.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="stojak na kwiaty.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="skrzyneczka do nici.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="pojemniczki do jajek.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="lampa wiszaca.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="Lampa szklana-2.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="miska.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="Talerz pietrowy-1.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="swiecznik.bmp" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="taboret z pleksi.dwg2 do wst..jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="cukierniczka.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="dom jednorodzinny w 3D.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="lawka do ogrodu.jpg" alt="104" width="120" height="90">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="thumbnail;myfirst" src="lampa woszaca.jpg" alt="104" width="120" height="90">
+<img  src="bombonierka.jpg" alt="104" width="120" height="90"><i class="hover"></i>
+<img  src="Szklany swiecznik.jpg" alt="104" width="120" height="90">
+<img  src="stojak na kwiaty.jpg" alt="104" width="120" height="90">
+<img  src="skrzyneczka do nici.jpg" alt="104" width="120" height="90">
+<img  src="pojemniczki do jajek.jpg" alt="104" width="120" height="90">
+<img  src="lampa wiszaca.jpg" alt="104" width="120" height="90">
+<img  src="Lampa szklana-2.jpg" alt="104" width="120" height="90">
+<img  src="miska.jpg" alt="104" width="120" height="90">
+<img  src="Talerz pietrowy-1.jpg" alt="104" width="120" height="90">
+<img  src="swiecznik.bmp" alt="104" width="120" height="90">
+<img  src="taboret z pleksi.dwg2 do wst..jpg" alt="104" width="120" height="90">
+<img  src="cukierniczka.jpg" alt="104" width="120" height="90">
+<img  src="dom jednorodzinny w 3D.jpg" alt="104" width="120" height="90">
+<img  src="lawka do ogrodu.jpg" alt="104" width="120" height="90">
+<img  src="lampa woszaca.jpg" alt="104" width="120" height="90">
 
 </div>
        
@@ -828,11 +794,6 @@ tr.pager td {
 <div class="fb-post" data-href="https://localhost:37328" data-width="350"></div>
 <div class="fb-comments" data-href="http://localhost:37328" data-numposts="5" data-colorscheme="light"></div>
 <script>
-function bigImg(x) {
-    x.style.height = "50%";
-    x.style.width = "50%";
-}
-
 function normalImg(x) {
     x.style.height = "60px";
     x.style.width = "60px";
@@ -841,17 +802,6 @@ function normalImg(x) {
         <!-- Write your comments here -->
 <h1>Projekty Auto Cad</h1>
         <a href="../mojaZakladka.cshtml"></a>
-<form enctype="multipart/form-data" action="#" method="post">
-    
-     
-      <label for="Image"></label>
-      <input type="file" name="Image"/>
-      <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
-      <br/>
-      <input type="submit" value="Upload"/>
-   
-  </form>
-  
        </div>
         <footer>
             <nav>
