@@ -820,39 +820,7 @@ function myFunction() {
     x.innerHTML = "A comment was added to this document, but as you know, comments are invisible.";
 }
 </script>
-       <?php
-// define variables and set to empty values
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
- 
-  
-  $comment = test_input($_POST["comment"]);
- 
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
-
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>  
-  <input type="text" name="name">
-  <br><br>
- 
- 
-  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-  <br><br>
- 
- 
-  <input type="submit" name="submit" value="Submit">  
-</form>
-
+       
 
 <footer>
             <nav>
