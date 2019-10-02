@@ -1164,77 +1164,27 @@ tr.pager td {
     --------------------------------------------------*/
      </style>
     <body>
-        <?php
-// define variables and set to empty values
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-  $website = test_input($_POST["website"]);
-  $comment = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
-<h2>PHP Form Validation Example</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name">
-  <br><br>
-  E-mail: <input type="text" name="email">
-  <br><br>
-  Website: <input type="text" name="website">
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" value="female">Female
-  <input type="radio" name="gender" value="male">Male
-  <input type="radio" name="gender" value="other">Other
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-</form>
-
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?>
-<p class="serif"></p>
+ <p class="serif"></p>
     </body>
             <footer>
      
                     <nav>
                         <ul id="menu">
-                            <li><a href="index.html"style="font-size: 12px">Startseite</a></li>
-                            <li><a href="About.html"style="font-size: 12px">Info</a></li>
-                            <li><a href="Contact.html"style="font-size: 12px">Contakt</a></li>
-                            <li><a href="About.html"style="font-size: 12px">About</a></li>
-                            <li><a href="~/Regolamin"style="font-size: 12px">Regolamin</a></li>
-                            <li><a href="~/LICENSE"style="font-size: 12px">LICENSE</a></li>
-                            <li><a href="Praca.html"style="font-size: 12px">Praca</a></li>
-                            <li><a href="Forum.html"style="font-size: 12px">Forum</a></li>
-                            <li><a href="Mitteilungen.html"style="font-size: 12px">Dzielenie</a></li>
-                            <li><a href="strona dla uzytkownika.html"style="font-size: 12px">Strona</a></li>
-                            <li><a href="Zdjecia.html"style="font-size: 12px">Zdjecia</a></li>
-                            <li><a href="~/Photolio"style="font-size: 12px">Photolio</a></li>
-                            <li><a href="Projekty techniczne.html"style="font-size: 12px">Zakladka</a></li>
+                            <li><a href="index.html">Startseite</a></li>
+                            <li><a href="About.html">Info</a></li>
+                            <li><a href="Contact.html">Contakt</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="~/Regolamin">Regolamin</a></li>
+                            <li><a href="~/LICENSE">LICENSE</a></li>
+                            <li><a href="Praca.html">Praca</a></li>
+                            <li><a href="Forum.html">Forum</a></li>
+                            <li><a href="Mitteilungen.html">Dzielenie</a></li>
+                            <li><a href="strona dla uzytkownika.html">Strona</a></li>
+                            <li><a href="Zdjecia.html">Zdjecia</a></li>
+                            <li><a href="~/Photolio">Photolio</a></li>
+                            <li><a href="Projekty techniczne.html">Zakladka</a></li>
                             <li><a href="~/termsfeed-html-privacy-policy-english.html.cshtml">Privacy Policy</a></li>
-                            <li><a href="TweetDeck.html"style="font-size: 12px">Twitter przegląd</a></li>
+                            <li><a href="TweetDeck.html"style=">Twitter przegląd</a></li>
                         </ul>
                        </nav>
                    </div>
