@@ -1171,6 +1171,48 @@ function myFunction1(){
   data-width="240"
   data-hide-cover="false"
   data-show-facepile="true"style="margin-top:5px;margin-left: 100px"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '785616684827268',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v4.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<script>
+FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/'
+}, function(response){});
+
+
+FB.ui({
+  method: 'share_open_graph',
+  action_type: 'og.likes',
+  action_properties: JSON.stringify({
+    object:'https://developers.facebook.com/docs/javascript/examples',
+  })
+}, function(response){
+  // Debug response (optional)
+  console.log(response);
+});
+
+
+FB.login(function(response) {
+    if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+});
+</script>
        <blockquote class="twitter-tweet" data-lang="en">
   </blockquote></a>
 <div class="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fapps.twitter.com%2F&ref_src=twsrc%5Etfw&text=Twitter%20Apps&tw_p=tweetbutton&url=https%3A%2F%2Fapps.twitter.com%2F&via=twitter"></div>
