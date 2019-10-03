@@ -1525,7 +1525,7 @@ for (j = name; j <id; j++) {
 <a class="ex8" href="https://www.instagram.com/selbachgrazyna/"><i title="instagram" class="fa fa-instagram"></i></a>
 </div>     
 </div>
-        <div class="fb-comments" data-href="http://localhost:37328" data-numposts="5" data-colorscheme="light"></div>
+        <div class="fb-comments" data-href="https://selbachgra.github.io/ome-pos/index.html" data-numposts="5" data-colorscheme="light"></div>
   <div class="container-fluid">
   <div class="row-fluid">
     <div class="span2">
@@ -1559,8 +1559,9 @@ function w3_close() {
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '785616684827268',
+      autoLogAppEvents : true,  
       xfbml      : true,
-      version    : 'v3.3'
+      version    : 'v4.0'
     });
 
     // ADD ADDITIONAL FACEBOOK CODE HERE
@@ -1574,6 +1575,37 @@ function w3_close() {
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+
+FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/'
+}, function(response){});
+
+
+FB.ui({
+  method: 'share_open_graph',
+  action_type: 'og.likes',
+  action_properties: JSON.stringify({
+    object:'https://developers.facebook.com/docs/javascript/examples',
+  })
+}, function(response){
+  // Debug response (optional)
+  console.log(response);
+});
+
+
+FB.login(function(response) {
+    if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+});  
 <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
