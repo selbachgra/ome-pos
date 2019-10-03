@@ -6,6 +6,7 @@
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property = "fb: admins" content = "{YOUR_FACEBOOK_USER_ID}" />  
         <meta name="SiteLayout.html"/>
         <link href="index.html"/>
         <link href="SiteLayout.html"/>
@@ -875,7 +876,58 @@ tr.pager td {
 
 <p id="rcorners2">
         </p>
+        <div id="fb-root"></div>
+ <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '785616684827268',
+      xfbml      : true,
+      xfbml      : true,  
+      version    : 'v4.0'
+    });
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script>
+FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/'
+}, function(response){});
+FB.ui({
+  method: 'share_open_graph',
+  action_type: 'og.likes',
+  action_properties: JSON.stringify({
+    object:'https://developers.facebook.com/docs/javascript/examples',
+  })
+}, function(response){
+  // Debug response (optional)
+  console.log(response);
+});
+FB.login(function(response) {
+    if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+});
+           </script>
 
+<div class="fb-post" data-href="https://selbachgra.github.io/ome-pos/index.html" data-width="350"></div>
+<div class="fb-comments" data-href="https://selbachgra.github.io/ome-pos/index.html" data-numposts="5" data-colorscheme="light"></div>       
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v4.0&appId=785616684827268&autoLogAppEvents=1"></script>
+
+ <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="350" data-numposts="5"></div> 
 <form method="post" action=""style="margin-top: 300px">
 Company Name:<br> 
 <p class="padding"><input type="text" name="CompanyName" value=""style="margin-top: -15px"><br></p>
