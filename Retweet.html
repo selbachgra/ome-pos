@@ -692,6 +692,37 @@ tr.pager td {
  <br> 
       </script>
      
+... which is shown in the screenshot below:
+![My helpful screenshot](/assets/screenshot.jpg)
+... you can [get the PDF](/assets/mydoc.pdf) directly.
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+     
+ <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+    
+     
+     
+     
 <form method="post" action=""method="post" style="margin-top: 10px">
 Company Name:<br> 
 <input type="text" name="CompanyName" value=""><br>
