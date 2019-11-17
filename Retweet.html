@@ -719,9 +719,22 @@ tr.pager td {
     </li>
   {% endfor %}
 </ul>
-     </script>   
-     
-     
+     </script>
+     <script>
+ {% filename %}blog/views.py{% endfilename %} 
+ def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})    
+     </script>    
      
 <form method="post" action=""method="post" style="margin-top: 10px">
 Company Name:<br> 
