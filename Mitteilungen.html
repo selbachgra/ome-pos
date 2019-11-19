@@ -1083,6 +1083,44 @@ function onLogin(response) {
   js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5&appId=785616684827268";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+ <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '785616684827268',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v5.0'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+
+
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+    }
+}       
     <div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="standard" data-show-faces="true"></div>
 
 <div class="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fapps.twitter.com%2F&ref_src=twsrc%5Etfw&text=Twitter%20Apps&tw_p=tweetbutton&url=https%3A%2F%2Fapps.twitter.com%2F&via=twitter"></div>
