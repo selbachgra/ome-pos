@@ -55,3 +55,14 @@ git push origin master
 		Subskrybuj posty
 	</a>
 </section>
+if lineRange.langth is 1
+$("\##{anchorPrefix}LC#{lineRange[0]}").css 'background-color',"#ffc"
+$("\##{anchorPrefix}LC#{lineRange[0]}").css 'background-color',"f8eec7"
+
+else if lineRange.length > 1
+   i=lineRange[0]
+   while i <=lineRange[1]
+   $("\##{anchorPrefix}LC#{i}").css 'background-color',"#ffc"
+   $("\##{anchorPrefix}LC#{i}").css 'background-color',"#f8eec7"
+   i++
+  # Highlight and scroll to the lines in current location hash.			 
