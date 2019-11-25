@@ -1103,7 +1103,14 @@ function four() {
 }
 </script>
     <body>
-<!-- Header -->
+       <form enctype="multipart/form-data"action="#"metod="post">
+           <label for="Image"></label>
+           <input type="file"name="Image"/>
+           <input type="hidden"name="MAX_FILE_SITE"value="1000000">
+           <br/>
+           <input type="submit"value="Upload"/>
+           </form>
+ <!-- Header -->
 <div class="header">
   <h1><b style="font-family: 'Sofia';font-size: 30px; text-align: center;color: #f00">Galeria zdjęć</b></h1>
   
