@@ -16,7 +16,22 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/>
         <meta name="viewport" content="width=device-width" /> 
 </head>
-
+    <script>
+WebImage photos=null;
+    var newFileName="";
+    var imagePath="";
+    if(IsPost){
+    photos=WebImage.GetImageFromRequest();
+    if(photos!=null){
+    newFileName=Guid.NewGuid().ToString()+"_"+
+    Path.GetFileName(photos.FileName);
+    imagePath=@"images\"+newFileName;
+    photos.Resize(wiedh:60,preserveAspectRatio:true,
+    preventEnlarge:true);
+    photos.Save(@"~\"+imagePath);
+    }
+  }
+    </script>              
 <style>
     * {
     box-sizing: border-box;
