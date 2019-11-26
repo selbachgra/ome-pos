@@ -16,20 +16,22 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/>
         <meta name="viewport" content="width=device-width" /> 
 </head>
-    <script>
-    @{  var imagePath = "";
-   WebImage WatermarkPhoto = new WebImage(@"~\" +
-        @"\Images\MyCompanyLogo.jpg");
-    WebImage photo = new WebImage(@"~\Images\Photo4.jpg");
-    if(photo != null){
-        imagePath = @"images\Photo4.jpg";
-        photo.AddImageWatermark(WatermarkPhoto, width: 80, height: 20,
-           horizontalAlign:"Center", verticalAlign:"Bottom",
-           opacity:100,  padding:10);
-      photo.Save(@"~\" + imagePath);
-   }
+    
+    @{  WebImage photo = null;
+    var newFileName = "";
+    var imagePath = "";
+
+    if(IsPost){
+        photo = WebImage.GetImageFromRequest();
+        if(photo != null){
+            newFileName = Guid.NewGuid().ToString() + "_" +
+                Path.GetFileName(photo.FileName);
+            imagePath = @"images\" + newFileName;
+
+            photo.Save(@"~\" + imagePath);
+        }
+    }
 }
-    </script>
               
 <style>
     * {
