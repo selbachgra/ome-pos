@@ -17,6 +17,20 @@
         <meta name="viewport" content="width=device-width" /> 
 </head>
     <script>
+    @{  var imagePath = "";
+   WebImage WatermarkPhoto = new WebImage(@"~\" +
+        @"\Images\MyCompanyLogo.jpg");
+    WebImage photo = new WebImage(@"~\Images\Photo4.jpg");
+    if(photo != null){
+        imagePath = @"images\Photo4.jpg";
+        photo.AddImageWatermark(WatermarkPhoto, width: 80, height: 20,
+           horizontalAlign:"Center", verticalAlign:"Bottom",
+           opacity:100,  padding:10);
+      photo.Save(@"~\" + imagePath);
+   }
+}
+    </script>
+    <script>
 WebImage photos=null;
     var newFileName="";
     var imagePath="";
@@ -1315,8 +1329,13 @@ function four() {
   </div></div>
 </div>
   </div>
-
-
+        <script>
+ @if(imagePath != ""){
+    <div class="result">
+      <img src="@imagePath" alt="Image" />
+    </div>
+  }
+        </script>
 <script>
 // Four images side by side
 function four() {
