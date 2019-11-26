@@ -30,22 +30,7 @@
    }
 }
     </script>
-    <script>
-WebImage photos=null;
-    var newFileName="";
-    var imagePath="";
-    if(IsPost){
-    photos=WebImage.GetImageFromRequest();
-    if(photos!=null){
-    newFileName=Guid.NewGuid().ToString()+"_"+
-    Path.GetFileName(photos.FileName);
-    imagePath=@"images\"+newFileName;
-    photos.Resize(wiedh:60,preserveAspectRatio:true,
-    preventEnlarge:true);
-    photos.Save(@"~\"+imagePath);
-    }
-  }
-    </script>              
+              
 <style>
     * {
     box-sizing: border-box;
@@ -1379,13 +1364,7 @@ function one() {
       <input type="submit" value="Upload" />
     </fieldset>
   </form>
-  <h1>Uploaded Image</h1>
-    @if(imagePath != ""){
-    <div class="result">
-        <img src="@imagePath" alt="image" />
-
-    </div>
-    </div>
+ 
    </body>
    <footer>
             <nav>
