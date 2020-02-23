@@ -1162,8 +1162,39 @@ tr.pager td {
     <body>
         <h1>Contact</h1>
         <h2>Your contack page.</h2>
- <div><script charset="UTF-8" src="https://edodatki.pl/code/chat?data%5BWidget%5D%5Burl%5D=https%3A%2F%2Fselbachgra.github.io%2Fome-pos%2F&data%5BWidget%5D%5Bdescription%5D=M%C3%B3j+chat&data%5BWidget%5D%5Bcolor%5D=white" type="text/javascript"></script><a href="" title=""></a><a href="https://edodatki.pl/widget/chat" title="Mini Chat na stronę">Mini Chat na stronę</a></div>       
  <p class="serif"></p>
+ <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+   
+<div><script charset="UTF-8" src="https://edodatki.pl/code/chat?data%5BWidget%5D%5Burl%5D=https%3A%2F%2Fselbachgra.github.io%2Fome-pos%2F&data%5BWidget%5D%5Bdescription%5D=M%C3%B3j+chat&data%5BWidget%5D%5Bcolor%5D=white" type="text/javascript"></script><a href="" title=""></a><a href="https://edodatki.pl/widget/chat" title="Mini Chat na stronę"></a></div>
+    
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<script>
+function myFunction() {
+    var c = document.createComment("My personal comments");
+    document.body.appendChild(c);
+    var x = document.getElementById("demo");
+    if (IsPost);
+   
+    x.innerHTML = "A comment was added to this document, but as you know, comments are invisible.";
+    
+}
+</script>
+       
     </body>
             <footer>
      
