@@ -1263,7 +1263,7 @@ function myFunction1(){
       appId            : '785616684827268',
       autoLogAppEvents : true,
       xfbml            : true,
-      version          : 'v5.0'
+      version          : 'v8.0'
     });
   };
 </script>
@@ -1274,7 +1274,7 @@ function myFunction1(){
       appId      : '785616684827268',
 autoLogAppEvents : true, 
       xfbml      : true,
-      version    : 'v5.0'
+      version    : 'v8.0'
     });
 
     // ADD ADDITIONAL FACEBOOK CODE HERE
@@ -1572,5 +1572,29 @@ function followIntentToAnalytics (intentEvent) {
 </div>        
             
 </footer>
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="283099091751913">
+          m.me/technikautocad
+      </div>
     </body>
 </html>
