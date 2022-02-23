@@ -16,6 +16,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36793796-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36793796-1');
+</script>
      </head>
     <body>
         <div class="ex4">
@@ -153,6 +162,131 @@ ul {
      menu1{
     font-size:3px;    
     }
+     p.big {
+    line-height: 100%;
+}   
+       
+   #div1{
+       background-color: #FFF;
+       width:400px;
+       text-align: center;
+       margin: 01px 20px 02px 10px;
+       border-radius: 10px 10px 10px 10px;
+       box-shadow: 02px 02px 5px #888888;
+       
+       border: 01px solid navy;
+       resize: vertical;
+       overflow: auto;    
+    }
+    #div2{
+       background-color: #FFF;
+       width:400px;
+       text-align: center;
+       margin: 01px 20px 02px 10px;
+       border-radius: 10px 10px 10px 10px;
+       box-shadow: 02px 02px 5px #888888;
+       
+       border: 01px solid navy;
+       resize: vertical;
+       overflow: auto;    
+    }
+    #div3{
+       background-color: #FFF;
+       width:250px;
+       height: 600px;
+       padding: 60px;
+       margin:-400px 20px 02px 450px;
+       border-radius: 10px 10px 10px 10px;
+       box-shadow: 02px 02px 5px #888888;
+       
+       border: 01px solid navy;
+       resize: vertical;
+       overflow: auto;
+       text-align: center;  
+    }
+    #div4{
+       background-color: #FFF;
+       width:400px;
+       text-align: center;
+       margin: -320px 20px 02px 10px;
+       border-radius: 10px 10px 10px 10px;
+       box-shadow: 02px 02px 5px #888888;
+       
+       border: 01px solid navy;
+       resize: vertical;
+       overflow: auto;
+   
+    }
+    #div5{
+        background-color: #FFF;
+       width:400px;
+       text-align: center;
+       margin: 01px 20px 02px 10px;
+       border-radius: 10px 10px 10px 10px;
+       box-shadow: 02px 02px 5px #888888;
+       
+       border: 01px solid navy;
+       resize: vertical;
+       overflow: auto; 
+    }
+    #div6{
+       background-color: #FFF;
+       width:400px;
+       text-align: center;
+       margin: 01px 20px 02px 10px;
+       border-radius: 10px 10px 10px 10px;
+       box-shadow: 02px 02px 5px #888888;
+       
+       border: 01px solid navy;
+       resize: vertical;
+       overflow: auto;     
+    }
+      
+    form{
+        margin-left: 100px;
+    }
+   
+   
+    
+    .button{
+        background: none;
+        color:white;
+        border: none;
+        padding: 1px 1px;
+    }
+    
+    /* unvisited link */
+a:link {
+    color: #aea7a7;
+}
+    /* mouse over link */
+a:hover {
+    color: #aea7a7;
+}
+
+a.ex1:hover, a.ex1:active {color: green;background: none}
+a.ex2:hover, a.ex2:active {color:#71bd75;background: none}
+a.ex3:hover, a.ex3:active {color: #6196d0;background: none}
+a.ex4:hover, a.ex4:active {color: #ba8cef;background: none}
+a.ex5:hover, a.ex5:active {color: #f32677;background: none}
+a.ex6:hover, a.ex6:active {color: #0026ff;background: none}
+a.ex7:hover, a.ex7:active {color: #f00;background: none}
+a.ex8:hover, a.ex8:active {color: #d53c26;background: none}        
+    socials{
+            width: 120px;
+            padding:0 100px;
+            height: 60px;
+            
+        }
+    ul class socials{
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        background: none;
+        box-shadow: 1px 1px 1px 1px #808080;
+        }
+    body {margin:0;}    
     </style>
     <body>
          <div class="container">
@@ -164,7 +298,18 @@ ul {
 <div class="transbox">
 
     <img src="screenshot-2.png" alt="Images/ome!posLogo.png"style="margin:0px 0px 0px 60px"/>
-   
+   <div id="nav">
+<a class="ex1" href="Retweet.html" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-retweet"title="retweet" ><i class="material-icons"onclick="myFunction()">0</i></i></a>
+<a class="ex2" href="https://selbachgra.github.io/ome-pos/Praca.html/repley.html" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-reply" title="repley" ><i class="material-icons"onclick="myFunction()"></i></i></a>
+<a class="ex3" href="https://selbachgra.github.io/ome-pos/Praca.html/forward.html" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-mail-forward"title="forward"><i class="material-icons"onclick="myFunction()"></i></i></a>
+<a class="ex4"><i class="fa fa-ellipsis-h"title="more"><i class="material-icons"onclick="myFunction()"></i></i></a>
+<a class="ex5" href="javascript:void(0)/favorite?post_id=Null" onclick="document.getElementById('demo').style.display='block'"><i class="fa fa-heart"title="Love"><i class="material-icons"onclick="myFunction()">0</i></i></a>
+<a class="ex6" href="https://www.facebook.com/technikautocad/"><i title="facebook"class="fa fa-facebook"></i></a>
+<a class="ex3" href="https://twitter.com/intent/tweet?text=Hello%20world"><i title="twitter" class="fa fa-twitter"></i></a>
+<a class="ex7" href="https://www.pinterest.de/"><i title="pinterest" class="fa fa-pinterest"></i></a>
+<a class="ex8" href="https://www.instagram.com/selbachgrazyna/"><i title="instagram" class="fa fa-instagram"></i></a>
+</div>
+</div>
                       <nav>
                         <ul id="menu1">  
                             <li><a href="index.html">Startseite</a></li>
